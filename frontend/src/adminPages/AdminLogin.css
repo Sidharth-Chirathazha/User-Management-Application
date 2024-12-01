@@ -1,0 +1,94 @@
+/* Admin Login Page Styles */
+.admin-auth__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px);
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.admin-auth__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: admin-fadeIn 0.6s ease-out;
+}
+
+.admin-auth__input {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.admin-auth__input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.admin-btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.admin-main__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-align: center;
+    gap: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.admin-main__title span {
+    color: #333;
+}
+
+.admin-main__title svg {
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-top: -0.2rem;
+    transition: all 0.3s ease;
+}
+
+.admin-main__title:hover svg {
+    color: #0056b3;
+    transform: translateX(3px);
+}
+
+@keyframes admin-fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
